@@ -1,0 +1,742 @@
+
+/* Eléments principaux de la page */
+body
+{
+	margin: 0;
+	padding:0;
+	font-family: arial;
+}
+
+#bloc_page
+{
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Header */
+
+header
+{
+	background: white;
+	position: fixed;
+	top:0;
+	z-index: 2;
+	height:80px;
+	width:100%;
+	//box-shadow:1px 1px 2px;
+}
+
+.logo
+{
+	width: 8%;
+	background-color: black;
+	margin:10px;
+}
+
+.couleur_blanche
+{
+	color: white;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/* Navigation */
+
+nav
+{
+	//background-color:rgb(0,0,153);
+	position: absolute;
+	bottom:0px;
+	right:20px;
+	width:40%;
+}
+
+#menu
+{
+	visibility: hidden;
+}
+
+nav ul
+{
+	list-style-type: none;
+}
+nav li
+{
+	display: inline-block;
+	//margin-right: 20%;
+	font-size: 120%;
+	padding: 10px;
+	font-family: arial;
+}
+
+/*nav a
+{
+	transition-property: width, height, background;
+	transition-duration: 0.5s;
+	color: rgb(0, 0, 220);
+	border: 1px solid rgb(255, 255, 255);
+	padding: 15px;
+}*/
+
+/*nav a:hover
+{
+	background:rgb(230,230,230);
+}
+
+.reserver
+{
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 250);
+	border-radius: 9px;
+}
+
+.reserver:hover
+{
+	background: rgb(0, 0, 140);
+}*/
+
+#banniere_image
+{
+	height: 510px;
+	z-index: 1;
+	position:relative;
+	top:20px;
+	//background-color:rgb(100, 250, 100);
+}
+
+#recherche
+{
+	position: relative;
+	top: 25%;
+	height:25px;
+  	width: 20%;
+  	margin-right: auto;
+  	margin-left: auto;
+  	z-index:2;
+  	//background-color:rgb(255, 100, 100);
+}
+.loupe
+{
+	//background-color:rgb(255, 100, 100);
+	width:19px;
+	position: absolute;
+	top: 20%;
+	right: 0px;
+}
+
+.img_accueil
+{
+	width:100%;
+	position:absolute;
+	top:0px;
+	z-index:1;
+}
+
+.titre_principal
+{
+	position: relative;
+	top: 30%;
+	padding-left: 0px;
+	padding-right: 0px;
+	width:78%;
+	margin-right: auto;
+  	margin-left: auto;
+  	text-align: center;
+	color:white;
+	font-size: 400%;
+	z-index:2;
+	//background-color:rgb(255, 100, 100);
+	font-family: arial;
+}
+
+
+#infos_connexion
+{
+	display: inline-block;
+	position: relative;
+	top:20px;
+	width:100%;
+	height: 80px;
+	//background-color: rgb(255, 0, 0);
+}
+
+.reservez
+{
+	position:absolute;
+	//top:0px;
+	right:40%;
+	width:52%;
+	font-size: 22px;
+	//color:green;
+	//background-color: yellow;
+}
+
+#ul_infos
+{
+	position:absolute;
+	top:-10px;
+	right:10%;
+	width:28%;
+	//background-color: rgb(0, 255, 0);
+}
+
+.inscription
+{
+	position:absolute;
+	left:0px;
+	display: inline-block;
+	background-color: rgb(220, 220, 220);
+	//border: 1px solid blue;
+	color:rgb(210,80,0);
+	//margin-right: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 15px;
+	font-size:100%;
+	width:30%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.inscription:hover
+{
+	font-size:15px;
+	background:rgb(180, 180, 200);
+	//box-shadow: 1px 1px 10px;
+}
+
+.connexion
+{
+	position:absolute;
+	right:0px;
+	display: inline-block;
+	background:rgb(210,110,0);
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 15px;
+	width:40%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.connexion:hover
+{
+	font-size:15px;
+	background:rgb(210,20,0);
+	//color:black;
+	box-shadow: 1px 1px 10px;
+}
+
+section
+{
+	position: relative;
+	background-color:rgb(240,240,240);
+	box-shadow: 1px 1px 10px;
+	//padding:10px;
+}
+
+#les_villes, figure
+{
+	display: inline-block;
+	
+}
+#les_villes
+{
+	position: relative;
+	text-align:center;
+	//background-color:rgb(0,240,240);
+}
+
+figure img
+{
+	border: 2px solid rgb(0, 44,13);
+	border-radius: 10px;
+}
+
+
+
+
+#les_bons_plans_voyage
+{
+	position: relative;
+	top:100px;
+	width: 100%;
+	height:400px;
+	background:black;
+	display:flex;
+	align-items:center;
+	//padding:12px;
+}
+
+.bonPlan
+{
+	//background:rgb(255,80,0);
+	position:relative;;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#inscr
+{
+	color:white;
+	background:rgb(255,80,0);
+	padding-right: 18px;
+	padding-left: 18px;
+	padding-bottom: 9px;
+	padding-top: 5px;
+	border-radius: 4px;"
+}
+
+#inscr:hover
+{
+
+	background:rgb(255,80,0);
+	font-size:14px;
+}
+
+footer
+{
+	position: relative;
+	top: 101px;
+}
+
+
+#cadre_bleu_footer
+{
+	position:relative;
+	background: rgb(0,2,22);
+	height:320px;
+}
+footer a
+{
+	color:white;
+	//text-align:center;
+}
+
+#centrer
+{
+	text-align:center;
+}
+#menu
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	//background: rgb(255,2,22);
+}
+
+#Cameroun
+{
+	display: inline-block;
+	color:white;
+	margin-right: 20%;
+}
+#Afrique
+{
+	display: inline-block;
+	color:white;
+	margin-right: 20%;
+}
+#Monde
+{
+	display: inline-block;
+	color:white;
+}
+#reseaux_sociaux
+{
+	position:relative;
+	top:5%;
+	width: 19%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.barre_du_bas
+{
+	//opacity:0,1;
+	position:relative;
+	top: 100px;
+	background:rgb(210,80,0);
+	height:50px;
+}
+
+.fleche
+{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	z-index:5;
+	width:5%;
+}
+
+
+
+
+
+
+
+@media(max-width:768px)
+{
+	body
+	{
+		margin: 0;
+		padding:0;
+		font-family: arial;
+		//background: blue;
+	}
+
+	#bloc_page
+	{
+		position: relative;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	header
+	{
+		height:60px;
+	}
+	.logo
+	{
+		width: 20%;
+		position:relative;
+		display: flex;
+		align-items: center;
+	}
+	
+	nav
+	{
+		background: green;
+		position: absolute;
+		bottom:0px;
+		right:20px;
+		width:40%;
+	}
+
+	#menu
+	{
+		visibility: visible;
+		position: absolute;
+		top: -40px;
+		right: 0px;
+		//display: inline-block;
+		width: 30px;
+		//height: 20px;
+
+	}
+
+	nav ul/*, nav:active ul*/
+	{
+		visibility: hidden;
+		position: absolute;
+		padding: 20px;
+		background: rgb(10, 10, 10);
+		opacity:0.98;
+		right: -20px;
+		top: -16px;
+		width: 150%;
+		height: 500px;
+	}
+
+	nav:active ul
+	{
+		visibility: visible;
+	}
+
+	nav li
+	{
+		text-align: center;
+		width: 100%;
+		padding: 15px;
+		margin: 0;
+		color: white;
+	}
+
+	
+
+	#banniere_image
+	{
+		background-image: url(images/carte_voyage_pour-phone.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height:275px;
+		z-index: 1;
+		position:relative;
+		top:32px;
+		//background: yellow;
+	}
+
+	.img_accueil
+	{
+		display:none;
+	}
+	
+	.titre_principal
+	{
+		opacity: 1;
+		text-align: center;
+		position: relative;
+		top: 70px;
+		margin-right: auto;
+		margin-left: auto;
+		color: white;
+		font-size: 150%;
+		font-weight: bold;
+		font-family: arial;
+		width:86%;
+		display: flex;
+		align-items: center;
+		font-weight: 800;
+	}
+
+	
+	
+	#infos_connexion
+	{
+		display: block;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+		top:5px;
+		width:100%;
+		height: 185px;
+		background-color: rgb(240, 240, 240);
+	}
+
+	.reservez
+	{
+		position:relative;
+		margin-right: auto;
+		margin-left: auto;
+		top:20px;
+		width:70%;
+		right:0;
+		font-size: 18px;
+		text-align: center;
+		font-weight: bold;
+		color: rgb(100, 100, 100);;
+		//background-color: yellow;
+	}
+
+	#ul_infos
+	{
+		position:relative;
+		margin-right: auto;
+		margin-left: auto;
+		top:30px;
+		right:0;
+		width:90%;
+		height:30px;
+		//background-color: rgb(0, 255, 0);
+	}
+
+	.inscription
+	{
+		position:absolute;
+		left:0px;
+		display: inline-block;
+		background-color: unset;
+		border: 1px solid rgb(255,80,0);
+		color:rgb(255,80,0);
+		//margin-right: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		padding-top: 17px;
+		font-size:100%;
+		width:35%;
+		text-align: center;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+
+	.inscription:hover
+	{
+		font-size:15px;
+		background:rgb(190, 190, 190);
+		//box-shadow: 1px 1px 10px;
+	}
+
+	.connexion
+	{
+		position:absolute;
+		right:0px;
+		display: inline-block;
+		background:rgb(255,80,0);
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-bottom: 20px;
+		padding-top: 17px;
+		width:43%;
+		text-align: center;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+
+	.connexion:hover
+	{
+		font-size:15px;
+		background:rgb(210,20,0);
+		//color:black;
+		box-shadow: 1px 1px 10px;
+	}
+
+	section
+	{
+		position: relative;
+		top:-60px;
+		background-color:rgb(255,255,255);
+		//box-shadow: 0px 0px 0px;
+	}
+
+	.dest
+	{
+		font-size: 20px;
+	}
+	.decouvrez
+	{
+		font-size: 13px;
+	}
+
+
+	#les_villes, figure
+	{
+		display: inline-block;
+		
+	}
+	#les_villes
+	{
+		position: relative;
+		top:-20px;
+		text-align:center;
+		width:100%;
+		//background-color:rgb(0,240,240);
+	}
+
+	figure
+	{
+		padding:10px;
+		background-color: rgb(240, 240, 240);
+		border-radius: 20px;
+	}
+
+	figure img
+	{
+		position:relative;
+		width:100%;
+		margin-right: auto;
+		margin-left: auto;
+		border: unset;
+		border-radius: 8px;
+
+	}
+
+	#les_bons_plans_voyage
+	{
+		position: relative;
+		top:-50px;
+		width: 100%;
+		height:350px;
+		background:black;
+		display:flex;
+		align-items:center;
+	}
+
+	.bonPlan
+	{
+		//background:rgb(255,0,0);
+		position:relative;
+		top:-5px;
+		width:90%;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		//border: 1px solid white;
+	}
+
+	.ne_manquez_pas
+	{
+		font-size: 20px;
+	}
+
+	.inscrivez_vous
+	{
+		font-size: 10px;
+	}
+
+	#inscr
+	{
+		color:white;
+		background:rgb(255,80,0);
+		padding-right: 15px;
+		padding-left: 18px;
+		padding-bottom: 12px;
+		padding-top: 5px;
+		border-radius: 7px;
+	}
+
+	#inscr:hover
+	{
+
+		background:rgb(255,80,0);
+		font-size:14px;
+	}
+
+
+	.barre_du_bas
+	{
+		opacity:0,1;
+		position:relative;
+		top: -50px;
+		background:rgb(210,80,0);
+		height:50px;
+	}
+
+	.cpyright
+	{
+		font-size: 10px;
+		top:5px;
+	}
+
+
+	.fleche
+	{
+		position:fixed;
+		bottom:10px;
+		right:10px;
+		z-index:5;
+		width: 12%;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
